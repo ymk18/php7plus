@@ -22,9 +22,9 @@ RUN apt-get update
 #RUN docker-php-ext-install zip
 #RUN docker-php-ext-install pcntl
 #RUN docker-php-ext-install opcache
+RUN docker-php-ext-install mbstring
 RUN docker-php-ext-install pdo_mysql
 #RUN docker-php-ext-install mysqli
-RUN docker-php-ext-install mbstring
 
 ## redis
 RUN pecl install redis-4.0.0 && docker-php-ext-enable redis
@@ -35,8 +35,8 @@ RUN pecl install igbinary && docker-php-ext-enable igbinary
 #RUN docker-php-ext-install soap
 
 ## bz2
-RUN apt-get install -y libbz2-dev
-RUN docker-php-ext-install bz2
+#RUN apt-get install -y libbz2-dev
+#RUN docker-php-ext-install bz2
 
 ## Extensions:
 ##     ctype, dom, fileinfo, ftp, hash, iconv, json, pdo, pdo_sqlite, session,
