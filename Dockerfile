@@ -11,8 +11,8 @@ RUN apt-get update
 #RUN docker-php-ext-install mcrypt
 
 ## GD
-RUN apt-get install -y libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev libfreetype6-dev
-# RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng12-dev
+# RUN apt-get install -y libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev libfreetype6-dev
+RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
 RUN docker-php-ext-install gd
 
