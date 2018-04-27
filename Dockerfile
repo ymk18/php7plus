@@ -4,7 +4,7 @@ FROM php:7.2.4-fpm
 
 ## Update Ubuntu
 RUN apt-get update
-RUN apt-get upgrade
+RUN apt-get upgrade -y
 
 ## mcrypt
 #RUN apt-get install -y libmcrypt-dev
