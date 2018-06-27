@@ -1,4 +1,5 @@
-FROM php:7.2.4-fpm
+FROM php:7.2.6-fpm
+# FROM php:7.2.4-fpm
 # https://github.com/yeszao/dnmp/blob/master/Dockerfile
 # https://github.com/docker-library/php/blob/c4f059d09d7eefcb73304d198faa7674610ed810/7.2/stretch/fpm/Dockerfile
 
@@ -130,5 +131,6 @@ RUN pecl install igbinary && docker-php-ext-enable igbinary
 #RUN apt-get install -y libmemcached-dev zlib1g-dev && pecl install memcached && docker-php-ext-enable memcached
 #RUN apt-get install -y libmagickwand-dev && pecl install imagick && docker-php-ext-enable imagick
 
-RUN docker-php-ext-install phalcon
-
+## phalcon
+# RUN docker-php-ext-install phalcon
+# docker-php-ext-enable phalcon
