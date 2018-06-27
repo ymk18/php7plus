@@ -141,4 +141,4 @@ RUN curl -sSL "https://codeload.github.com/phalcon/cphalcon/tar.gz/v${PHALCON_VE
     && rm -r cphalcon-${PHALCON_VERSION}
 
 # RUN docker-php-ext-install phalcon
-docker-php-ext-enable phalcon
+# docker-php-ext-enable phalcon
