@@ -130,3 +130,5 @@ RUN pecl install igbinary && docker-php-ext-enable igbinary
 #RUN apt-get install -y libmemcached-dev zlib1g-dev && pecl install memcached && docker-php-ext-enable memcached
 #RUN apt-get install -y libmagickwand-dev && pecl install imagick && docker-php-ext-enable imagick
 
+RUN docker-php-ext-install phalcon
+
